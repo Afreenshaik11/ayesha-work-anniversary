@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Work Anniversary Ayesha</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Premium Confetti Engine -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #020224 0%, #001f60 50%, #0033a0 100%);
+    overflow-x:hidden;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* Elegant Floating Audio Control */
+.music-bar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 16px;
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    z-index: 1000;
+    border: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.music-bar audio {
+    height: 28px;
+    width: 210px;
+    filter: invert(1) hue-rotate(180deg); /* Blends default player natively into dark mode */
+}
+
+section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:60px 20px;
+    position: relative;
+}
+
+h1{
+    font-size:65px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    animation:glow 2.5s infinite alternate;
+}
+
+h2{
+    font-size:42px;
+    margin-bottom:20px;
+    font-weight: 600;
+}
+
+p{
+    font-size:22px;
+    max-width:800px;
+    line-height:1.8;
+    font-weight: 300;
+}
+
+@keyframes glow{
+    from{ text-shadow:0 0 15px rgba(255,255,255,0.6), 0 0 30px rgba(0,210,255,0.3); }
+    to{ text-shadow:0 0 30px #fff, 0 0 50px cyan; }
+}
+
+/* Premium Scroll Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 1.2s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+img{
+    width:320px;
+    height:450px;
+    object-fit:cover;
+    border-radius:24px;
+    box-shadow: 0 0 40px rgba(0, 210, 255, 0.4);
+    margin:25px;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+img:hover{
+    transform: scale(1.06) rotate(1deg);
+    box-shadow: 0 0 50px cyan;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.05);
+    padding: 45px 50px;
+    border-radius: 24px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2), 0 0 1px rgba(255,255,255,0.2) inset;
+    border: 1px solid rgba(255,255,255,0.1);
+    max-width: 850px;
+}
+
+.timeline{
+    font-size:28px;
+    line-height:2.2;
+    font-weight: 400;
+}
+
+button{
+    padding:16px 45px;
+    border:none;
+    border-radius:40px;
+    background: white;
+    color:#023e8a;
+    font-size:22px;
+    cursor:pointer;
+    margin-top:40px;
+    font-weight:700;
+    box-shadow: 0 8px 25px rgba(255,255,255,0.1);
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+button:hover{
+    background: cyan;
+    color: #020224;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px cyan;
+}
+
+.star {
+    position: fixed;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    animation: blink 3s infinite;
+    z-index: -1;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.9; }
+}
+</style>
+</head>
+<body>
+
+<!-- Audio Controller Component -->
+<div class="music-bar">
+    <span>🎧 MUSIC</span>
+    <audio controls loop>
+        <source src="m1.mp4" type="video/mp4">
+    </audio>
+</div>
+
+
+<!-- Section 1: Intro -->
+<section>
+    <h1 class="reveal">365 Days ✨</h1>
+    <h2 class="reveal">One Amazing Journey</h2>
+    <p class="reveal">
+        Every dream begins with a single step...<br>
+        Today marks one beautiful year of dedication, learning, growth and success.
+    </p>
+</section>
+
+<!-- Section 2: Congratulations Card -->
+<section>
+    <div class="card reveal">
+        <h1>Congratulations</h1>
+        <h2 style="color: cyan; margin-top: 10px;">Ayesha 💙</h2>
+        <p style="font-size: 24px; opacity: 0.9; margin-top: 10px;">Happy 1st Work Anniversary at Cognizant</p>
+    </div>
+</section>
+
+<!-- Section 3: Photo Display 1 -->
+<section>
+    <h2 class="reveal" style="margin-bottom: 10px;">Your Beautiful Journey 📸</h2>
+    <img class="reveal" src="https://raw.githubusercontent.com/Afreenshaik11/ayesha-work-anniversary/main/pic1.png" alt="pic1">
+</section>
+
+<!-- Section 4: Timeline Card -->
+<section>
+    <div class="card reveal">
+        <h2 style="color: cyan; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 25px;">July 1, 2025</h2>
+        <p class="timeline">
+            ✨ Started a New Journey<br>
+            📚 Learned New Skills<br>
+            💻 Worked on Exciting Projects<br>
+            🤝 Made Wonderful Friends<br>
+            🏆 Achieved Milestones<br>
+            ❤️ Completed One Amazing Year
+        </p>
+    </div>
+</section>
+
+<!-- Section 5: Photo Display 2 -->
+<section>
+    <img class="reveal" src="https://raw.githubusercontent.com/Afreenshaik11/ayesha-work-anniversary/main/pic2.png" alt="pic2">
+    <h2 class="reveal" style="margin-top: 15px;">Keep Growing 🌸</h2>
+</section>
+
+<!-- Section 6: Letter and Action -->
+<section>
+    <div class="card reveal" style="background: transparent; box-shadow: none; backdrop-filter: none; border: none; padding: 10px;">
+        <h1 style="margin-bottom: 30px;">From My Heart ❤️</h1>
+        <p style="text-align: left; margin-bottom: 20px; font-weight: 300; font-size: 21px;">
+            Dear Ayesha,
+            <br><br>
+            Congratulations on completing your first wonderful year at Cognizant.
+            <br><br>
+            Watching you grow, learn, and achieve so much over this past year has been truly inspiring.
+            I know this is only the beginning of an incredible journey.
+            <br><br>
+            May every challenge make you stronger,
+            every opportunity lead you closer to your dreams,
+            and every success remind you how capable and amazing you truly are.
+            <br><br>
+            Keep believing in yourself. Keep smiling. Keep shining.
+            <br><br>
+            The best is yet to come.
+            <br><br>
+            I wish you endless happiness, great health, career success, many promotions, and a future filled with beautiful achievements.
+            <br><br>
+            Happy First Work Anniversary. I'm so proud of you.
+            <br><br>
+            ❤️
+        </p>
+        <h2 style="margin-top: 40px; font-size: 36px; line-height: 1.4;">With Love,<br><span style="color: cyan;">Afreen</span></h2>
+        <button onclick="celebrate()">Celebrate 🎉</button>
+    </div>
+</section>
+
+<script>
+// Generate Starfield Environment
+for(let i=0; i<140; i++){
+    let star = document.createElement("div");
+    star.className = "star";
+    star.style.left = Math.random() * 100 + "vw";
+    star.style.top = Math.random() * 100 + "vh";
+    star.style.animationDuration = Math.random() * 3 + 1.5 + "s";
+    document.body.appendChild(star);
+}
+
+// Cinematic Scroll Tracking Engine
+function revealSections() {
+    let reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementVisible = 140;
+        
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        }
+    }
+}
+window.addEventListener("scroll", revealSections);
+revealSections(); // Trigger initially for viewports
+
+// Double-burst Pro Confetti Launcher
+function celebrate(){
+    // Left side burst
+    confetti({
+        particleCount: 100,
+        angle: 60,
+        spread: 70,
+        origin: { x: 0, y: 0.6 }
+    });
+    // Right side burst
+    confetti({
+        particleCount: 100,
+        angle: 120,
+        spread: 70,
+        origin: { x: 1, y: 0.6 }
+    });
+    
+    // Delayed fallback greeting
+    setTimeout(() => {
+        alert("🎉 Happy 1st Work Anniversary Ayesha! 🎉");
+    }, 500);
+}
+</script>
+
+</body>
+</html>
